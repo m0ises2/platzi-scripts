@@ -20,7 +20,7 @@ pipeline {
       }
     }
     stage('Hey man, you cool?') {
-      steps: {
+      steps {
         bat 'echo im a echo from shell'
         bat 'echo another echo from shell'
       }

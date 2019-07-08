@@ -11,18 +11,18 @@ pipeline {
   stages {
     stage('Install dependencies') {
       steps {
-        bat 'cd jenkins-tests && npm i'
+        sh 'cd jenkins-tests && npm i'
       }
     }
     stage('Run tests') {
       steps {
-        bat 'cd jenkins-tests && npm t'
+        sh 'cd jenkins-tests && npm t'
       }
     }
     stage('Hey man, you cool?') {
       steps {
-        bat 'echo im a echo from shell'
-        bat 'echo another echo from shell'
+        sh 'echo im a echo from shell'
+        sh 'echo another echo from shell'
       }
     }
   }
